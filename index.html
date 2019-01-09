@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>ANGULAR WORK SHOP</title>
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <!--ANGULAR CORE SCRIPTS-->
+    <script src="assets/lib/angular/angular.js"></script>
+    <script src="assets/lib/angular/angular-route.js"></script>
+    <script src="assets/lib/angular/angular-sanitize.js"></script>
+    <!--CG BUSY SCRIPTS-->
+
+    <script src="vendor/angular-busy/angular-busy.js"></script>
+    <link href="vendor/angular-busy/angular-busy.min.css" rel="stylesheet" />
+    <script src="scripts/app.js"></script>
+
+    <!--END OF CG BUSY SCRIPTS-->
+    <!--ANGULAR CORE SCRIPTS-->
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <script src="scripts/controllers/custom.js"></script>
+
+    <!--FORM BUILDER SCRIPTS-->
+   
+    <script src="vendor/angular-file-upload/angular-file-upload.js"></script>
+    <script src="vendor/formbuilder/ui-bootstrap-tpls.js"></script>
+    <script src="vendor/formbuilder/angular-form-gen.js"></script>
+    <link href="vendor/formbuilder/angular-form-gen.css" rel="stylesheet" />
+    <link href="vendor/formbuilder/font-awesome.min.css" rel="stylesheet" />
+    <script src="vendor/formbuilder/showdown.js"></script>
+    <script src="vendor/formbuilder/angular-markdown-text.js"></script>
+    <script src="scripts/controllers/formbuilder.js"></script>
+
+    <!--END OF FORM BUILDER SCRIPTS-->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=10;IE=9; IE=8; IE=7; IE=EDGE" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div ng-include src="'views/partials/header.html'"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="wrapper" ng-view></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+
+                &nbsp;    &nbsp;    &nbsp;
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+
+                &nbsp;    &nbsp;    &nbsp;
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div ng-include src="'views/partials/footer.html'"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A30554E8-62C7-4412-B5EE-FF5923AF418D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AngularJSWorkShopApplication</RootNamespace>
+    <AssemblyName>AngularJSWorkShop</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\ProductsController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Products.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\main.css" />
+    <Content Include="assets\img\addtocart.png" />
+    <Content Include="assets\img\logo.png" />
+    <Content Include="assets\img\products\apl.jpg" />
+    <Content Include="assets\img\products\avc.jpg" />
+    <Content Include="assets\img\products\ban.jpg" />
+    <Content Include="assets\img\products\ctp.jpg" />
+    <Content Include="assets\img\products\fig.jpg" />
+    <Content Include="assets\img\products\grf.jpg" />
+    <Content Include="assets\img\products\grp.jpg" />
+    <Content Include="assets\img\products\gua.jpg" />
+    <Content Include="assets\img\products\kiw.jpg" />
+    <Content Include="assets\img\products\lyc.jpg" />
+    <Content Include="assets\img\products\man.jpg" />
+    <Content Include="assets\img\products\org.jpg" />
+    <Content Include="assets\img\products\pap.jpg" />
+    <Content Include="assets\img\products\pch.jpg" />
+    <Content Include="assets\img\products\per.jpg" />
+    <Content Include="assets\img\products\pmg.jpg" />
+    <Content Include="assets\img\products\pnp.jpg" />
+    <Content Include="assets\img\products\psm.jpg" />
+    <Content Include="assets\img\products\str.jpg" />
+    <Content Include="assets\img\products\tng.jpg" />
+    <Content Include="assets\img\products\wml.jpg" />
+    <Content Include="assets\img\r0.png" />
+    <Content Include="assets\img\r1.png" />
+    <Content Include="assets\img\r2.png" />
+    <Content Include="assets\img\r3.png" />
+    <Content Include="assets\img\r4.png" />
+    <Content Include="assets\lib\angular\angular-ui-router.js" />
+    <Content Include="assets\lib\angular\ocLazyLoad.js" />
+    <Content Include="dataModels\persondetails.json" />
+    <None Include="dataModels\counties.json" />
+    <Content Include="dataModels\products.json" />
+    <Content Include="dataModels\questionsModel.json" />
+    <Content Include="dataModels\countries.json" />
+    <None Include="dataModels\states.json" />
+    <Content Include="vendor\angular-file-upload\angular-file-upload.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="index.html" />
+    <Content Include="vendor\angular-busy\angular-busy.css" />
+    <Content Include="vendor\angular-busy\angular-busy.js" />
+    <Content Include="vendor\angular-busy\angular-busy.min.css" />
+    <Content Include="vendor\angular-busy\angular-busy.min.js" />
+    <Content Include="assets\lib\angular\angular-route.js" />
+    <Content Include="assets\lib\angular\angular-sanitize.js" />
+    <Content Include="assets\lib\angular\angular.js" />
+    <Content Include="scripts\app.js" />
+    <Content Include="scripts\controllers\custom.js" />
+    <Content Include="vendor\inventory-product\inventoryproduct.html" />
+    <Content Include="vendor\inventory-product\inventoryproduct.js" />
+    <Content Include="views\databinding.html" />
+    <Content Include="views\questiontemplate.html" />
+    <Content Include="views\events.html" />
+    <Content Include="views\promises.html" />
+    <Content Include="views\inventory.html" />
+    <Content Include="views\myvalidations.html" />
+    <Content Include="views\partials\footer.html" />
+    <Content Include="views\shoppingCart.htm" />
+    <Content Include="views\store.htm" />
+    <Content Include="views\topics.html" />
+    <Content Include="views\products.html" />
+    <Content Include="views\partials\header.html" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="vendor\angular-busy\angular-busy.min.js.map" />
+    <Content Include="vendor\fonts\fontawesome-webfont.eot" />
+    <Content Include="vendor\fonts\fontawesome-webfont.ttf" />
+    <Content Include="vendor\fonts\fontawesome-webfont.woff" />
+    <Content Include="vendor\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="vendor\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="vendor\fonts\glyphicons-halflings-regular.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>11385</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:11385/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
